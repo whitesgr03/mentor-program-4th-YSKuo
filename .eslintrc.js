@@ -20,6 +20,8 @@ module.exports = {
     'react',
   ],
   rules: {
-    "no-console": "off"
+    "no-console": "off",
+    "consistent-return": "Off",
+    "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"]
   },
 };
