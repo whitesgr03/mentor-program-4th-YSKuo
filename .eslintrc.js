@@ -22,6 +22,7 @@ module.exports = {
   rules: {
     "no-console": "off",
     "consistent-return": "Off",
-    "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"]
+    "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }]
   },
 };
