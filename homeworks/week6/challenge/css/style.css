@@ -1,0 +1,165 @@
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.wrapper {
+  background-color: #F6F6EF;
+  margin: 10px 8%;
+  font-size: 0.6rem;
+  padding-bottom: 8px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 2px;
+  align-items: center;
+  background-color: #FF6600;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__text {
+  display: flex;
+}
+
+.header__LOGO {
+  border: 1px solid white;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin-right: 4px;
+}
+
+.header__LOGO a {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header__site-name {
+  font-weight: bold;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+header .navbar ul {
+  margin-left: 10px;
+}
+
+header li + li::before, .footer__links a + a::before {
+  content: "|";
+  margin: 6px;
+}
+
+.header__right {
+  margin-right: 6px;
+}
+
+ol.rank {
+  padding-top: 5px;
+  padding-left: 30px;
+}
+
+.rank li {
+  margin-top: 5px;
+}
+
+.rank li, .rank li a, .page__more, .footer__search {
+  color: #999999;
+}
+
+.rank .material-icons {
+  vertical-align: text-bottom;
+}
+
+.rank li .rank__text {
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.rank__name a.rank__topic {
+  color: black;
+}
+
+.rank__site-name {
+  font-size: 12px;
+}
+
+.rank__site-name:hover {
+  text-decoration: underline;
+}
+
+.rank__site-name::before {
+  content: "(";
+}
+
+.rank__site-name::after  {
+  content: ")";
+}
+
+.rank__desc {
+  margin-top: 5px;
+}
+
+.rank__status::before, .rank__comments::before {
+  content: "|";
+  padding-right: 5px;
+}
+
+.page__more {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 58px;
+}
+
+main hr {
+  background-color: #FF6600;
+  height: 2px;
+  border: none;
+}
+
+.footer__links {
+  text-align: center;
+  max-width: 600px;
+  margin: 20px auto;
+  font-size: 12px;
+}
+
+.footer__search {
+  text-align: center;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    margin: 0;
+    font-size: 0.7rem;
+  }
+  .footer__search input {
+    width: 80%;
+  }
+  .header__text {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 4px;
+  }
+  header .navbar ul {
+    margin-left: 0;
+  }
+}
