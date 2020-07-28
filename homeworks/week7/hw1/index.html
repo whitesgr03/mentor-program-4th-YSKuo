@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>新拖延運動報名表單</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <div class="bg">
+      <form class="form">
+        <section class="header">
+          <h1 class="form__title">新拖延運動報名表單</h1>
+          <p class="form__desc">活動日期：2020/12/10 ~ 2020/12/11<br>活動地點：台北市大安區新生南路二段1號</p>
+          <p class="required">*必填</p>
+        </section>
+
+        <section class="section">
+          <h2 class="form__subtitle">暱稱 <span class="required">*</span></h2>
+          <div class="form__input">
+            <input type="text" name="nickname">
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="form__subtitle">電子郵件 <span class="required">*</span></h2>
+          
+          <div class="form__input">
+            <input type="email" name="email">
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="form__subtitle">手機號碼 <span class="required">*</span></h2>
+          <div class="form__input">
+            <input type="phone" name="phone">
+          </div>
+        </section>
+
+        <section class="radio">
+          <h2 class="form__subtitle">報名類型 <span class="required">*</span></h2>
+          <div class="form__option">
+            <label>
+              <input name="type" type="radio" value="躺在床上用想像力實作" required>躺在床上用想像力實作
+            </label>
+            <label>
+              <input name="type" type="radio" value="趴在地上滑手機找現成的">趴在地上滑手機找現成的
+            </label>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="form__subtitle">怎麼知道這個活動的？ <span class="required">*</span></h2>
+          <div class="form__input">
+            <input type="text" name="referal">
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="form__subtitle">其他</h2>
+          <p class="form__desc">對活動的一些建議</p>
+          <div class="form__input">
+          <input type="text" name="suggestion">
+          </div>
+        </section>
+        
+        <section class="submit">
+          <input type="submit" value="提交" class="form__submit">
+          <p class="form__desc">請勿透過表單送出您的密碼。</p>
+        </section>
+
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer__desc">© 2020 © Copyright. All rights Reserved.
+    </div>
+  </footer>
+  <script src="js/index.js"></script>
+</body>
+</html>

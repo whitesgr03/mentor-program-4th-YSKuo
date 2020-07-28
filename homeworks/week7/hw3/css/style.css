@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: inherit;
+  outline: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.list {
+  background-color: #f4f4f4;
+  margin-top: 100px;
+  padding: 20px 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  box-shadow: 2px 2px 6px #cccccc;
+}
+
+.list__title {
+  text-align: center;
+}
+
+.list__input {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.list__input input {
+  margin-right: 10px;
+}
+
+.list__input-btn {
+  background-color: #58e27b;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+  padding: 10px;
+}
+
+.list__item {
+  display: flex;
+  margin-top: 20px;
+  padding: 20px 10px;
+}
+
+.list__item:hover {
+  background-color: #FFFDE7;
+}
+
+.list__item-checkbox {
+  flex: initial;
+}
+
+.list__item-checkbox:hover {
+  cursor: pointer;
+}
+
+.list__item-desc {
+  flex: 10;
+  margin: 0 10px;
+  word-break: break-word;
+}
+
+.list__item-desc-Checked {
+  color: #bfbfbf;
+  text-decoration: line-through;
+}
+
+.list__item-delete {
+  flex: 1;
+}
+
+.list__item-delete:hover {
+  cursor: pointer;
+}
+
+.icon-cross {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  opacity: 0.3;
+  transition: all 0.2s;
+}
+
+.icon-cross:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.icon-cross::before , 
+.icon-cross::after {
+    position: absolute;
+    content: ' ';
+    height: 2px;
+    width: 30px;
+    right: 5%;
+    background: black;
+    transition: all 0.1s;
+}
+
+.icon-cross::before {
+  transform: rotate(45deg);
+}
+
+.icon-cross::after {
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    margin: 0;
+  }
+
+  .list {
+    margin-top: 0;
+  }
+}
