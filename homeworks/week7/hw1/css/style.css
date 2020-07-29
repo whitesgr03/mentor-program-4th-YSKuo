@@ -28,7 +28,8 @@ h1, h2, p {
   font-size: 14px;
 }
 
-.required {
+.required .form__subtitle:after {
+  content: "*";
   color: #e74149;
 }
 
@@ -37,9 +38,13 @@ h1, h2, p {
   line-height: 1.5em;
 }
 
-p.required {
+.header p {
   font-size: 16px;
   margin-top: 22px;
+}
+
+.header .form__note {
+  color: #e74149;
 }
 
 .form__subtitle {
@@ -48,7 +53,6 @@ p.required {
 
 .form__input {
   font-size: 16px;
-
 }
 
 .form__input input {
@@ -70,7 +74,6 @@ p.required {
   font-size: 14px;
   margin-top: 24px;
   display: flex;
-
 }
 
 .form__option input {
@@ -102,13 +105,19 @@ p.required {
 }
 
 .warning:after {
-  content: 'required';
-  font-size: 16px;
+  content: '此欄為必填';
+  font-size: 12px;
   color: red;
+  margin-top: 5px;
+  position: absolute;
 }
 
 @media (max-width: 768px) {
   .form__input input {
     width: 100%;
+  }
+
+  .bg {
+    padding: 0;
   }
 }
