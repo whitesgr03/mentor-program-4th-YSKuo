@@ -275,7 +275,6 @@ footer {
   font-size: 16px;
   margin-top: 24px;
   line-height: 1.5em;
-
   display: none;
 }
 
@@ -285,13 +284,11 @@ div.section__question + div {
 
 .visible {
   display: block;
-  opacity: 1;
 }
 
 nav + .wrapper {
   margin-top: 5rem;
 }
-
 
 /* RWD */
 @media (max-width: 768px) {
@@ -300,6 +297,10 @@ nav + .wrapper {
     flex-direction: column;
     justify-content: space-between;
     padding: 0;
+  }
+
+  .navbar__list li a {
+    padding: 5px 25px;
   }
 
   .navbar__site-name {
@@ -371,3 +372,8 @@ nav + .wrapper {
   }
 }
 
+@media (max-width: 576px) {
+  .navbar__list li a {
+    font-size: 14px;
+  }
+}
